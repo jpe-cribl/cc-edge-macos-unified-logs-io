@@ -1,8 +1,9 @@
 # CI Gate — thin wrapper over the dryvist org reusable workflow
 #
 # Delegates the standard checks to the org orchestrator
-# `dryvist/.github/.github/workflows/_ci-gate.yml@main`; its `Merge Gate`
-# summary job always reports, making it safe to require in rulesets.
+# `dryvist/.github/.github/workflows/_ci-gate.yml`, pinned to a release tag by
+# commit SHA; its `Merge Gate` summary job always reports, making it safe to
+# require in rulesets.
 
 name: CI Gate
 
@@ -30,7 +31,7 @@ jobs:
       # so `actions: write` must be granted here or the run fails at graph
       # validation (startup_failure).
       actions: write
-    uses: dryvist/.github/.github/workflows/_ci-gate.yml@main
+    uses: dryvist/.github/.github/workflows/_ci-gate.yml@badaa922f8ec0d53c66bfeb1f4b9325d74fc3e5a # v1.19.3
     with:
       markdown_lint: true
       file_size: true
