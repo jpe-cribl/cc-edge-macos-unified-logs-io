@@ -22,3 +22,6 @@ dist/
 
 # Local git worktrees
 .worktrees/
+
+# Shared CI scripts checked out at test time
+.gh-shared/

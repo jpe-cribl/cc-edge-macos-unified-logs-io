@@ -14,7 +14,8 @@
       "!**/.direnv",
       "!**/default",
       "!**/data/samples",
-      "!**/tests/fixtures"
+      "!**/tests/fixtures",
+      "!**/.gh-shared"
     ]
   },
   "formatter": {
