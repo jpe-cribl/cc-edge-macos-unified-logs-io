@@ -9,7 +9,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-25.11-darwin";
     nix-devenv = {
-      url = "github:JacobPEvans/nix-devenv?dir=shells/typescript";
+      url = "github:JacobPEvans/nix-devenv/v0.26.0?dir=shells/typescript";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
