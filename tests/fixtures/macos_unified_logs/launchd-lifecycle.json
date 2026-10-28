@@ -1,0 +1,9 @@
+[
+  {
+    "_time": 1761657600.123,
+    "_raw": "Successfully spawned example-agent[123] because xpc event",
+    "process": "launchd",
+    "subsystem": "com.apple.xpc.launchd",
+    "category": "default"
+  }
+]

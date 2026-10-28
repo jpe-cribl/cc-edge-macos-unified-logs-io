@@ -1,0 +1,23 @@
+output: default
+streamtags: []
+groups: {}
+asyncFuncTimeout: 1000
+description: >-
+  macOS Unified Logs. Drops launchd lines that are not lifecycle events, then
+  stamps index os and sourcetype macos:unified_log on every remaining event.
+functions:
+  # Keeps a launchd line only when its text matches one of the listed
+  # case-insensitive phrases; drops every other launchd line. Non-launchd
+  # events do not match the filter and pass through.
+  - id: drop
+    filter: "process === 'launchd' && !/Successfully spawned|spawn deferred|internal event: EXITED|exited due to|ran for|did not exit|throttl|inefficient|crash/i.test(_raw)"
+    disabled: false
+  - id: eval
+    filter: "true"
+    disabled: false
+    conf:
+      add:
+        - name: index
+          value: "'os'"
+        - name: sourcetype
+          value: "'macos:unified_log'"

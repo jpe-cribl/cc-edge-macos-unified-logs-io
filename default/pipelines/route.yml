@@ -1,0 +1,15 @@
+id: default
+groups: {}
+comments: []
+routes:
+  - id: macos-unified-logs
+    name: macOS Unified Logs
+    final: true
+    disabled: false
+    pipeline: macos_unified_logs
+    description: "macOS Unified Logging events routed to the macos_unified_logs pipeline."
+    enableOutputExpression: false
+    targetContext: group
+    filter: "datatype=='macos-unified-log'"
+    clones: []
+    output: __group

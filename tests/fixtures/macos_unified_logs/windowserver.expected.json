@@ -1,0 +1,8 @@
+[
+  {
+    "index": "os",
+    "sourcetype": "macos:unified_log",
+    "process": "WindowServer",
+    "_raw": "Clearing datagram buffer after 3 dropped events"
+  }
+]
