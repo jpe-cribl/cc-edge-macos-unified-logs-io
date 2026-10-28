@@ -1,7 +1,7 @@
 {
   "name": "cc-edge-macos-unified-logs-io",
   "version": "0.1.0",
-  "minLogStreamVersion": "4.18.0",
+  "minLogStreamVersion": "4.16.0",
   "author": "jpe-cribl",
   "description": "Cribl Edge pack for macOS Unified Logging events: drops non-lifecycle launchd lines and stamps index os with sourcetype macos:unified_log.",
   "displayName": "macOS Unified Logs (Cribl Edge)",
