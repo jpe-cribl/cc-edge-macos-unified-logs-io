@@ -2,19 +2,14 @@ id: default
 groups: {}
 comments: []
 routes:
-  # Demo route. Replace with your real routes when scaffolding a new pack.
-  # Validator rules:
-  #   - id and pipeline must be descriptive (no 'main', no 'route1')
-  #   - filter must be a real expression (not literally 'false' / '0')
-  #   - output MUST be __group (not input_id)
-  - id: passthrough
-    name: Demo Passthrough
+  - id: macos-unified-logs
+    name: macOS Unified Logs
     final: true
     disabled: false
-    pipeline: passthrough
-    description: "Demo route — replace when scaffolding a new pack."
+    pipeline: macos_unified_logs
+    description: "macOS Unified Logging events routed to the macos_unified_logs pipeline."
     enableOutputExpression: false
     targetContext: group
-    filter: "datatype=='cribl-demo'"
+    filter: "datatype=='macos-unified-log'"
     clones: []
     output: __group

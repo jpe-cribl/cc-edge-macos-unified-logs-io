@@ -1,0 +1,9 @@
+[
+  {
+    "_time": 1761657601.456,
+    "_raw": "Clearing datagram buffer after 3 dropped events",
+    "process": "WindowServer",
+    "subsystem": "com.apple.WindowServer",
+    "category": "default"
+  }
+]

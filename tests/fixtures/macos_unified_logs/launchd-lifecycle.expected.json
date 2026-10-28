@@ -1,0 +1,8 @@
+[
+  {
+    "index": "os",
+    "sourcetype": "macos:unified_log",
+    "process": "launchd",
+    "_raw": "Successfully spawned example-agent[123] because xpc event"
+  }
+]
