@@ -11,7 +11,11 @@ Cribl Edge pack for macOS Unified Logging events.
    `internal event: EXITED`, `exited due to`, `ran for`, `did not exit`,
    `throttl`, `inefficient`, `crash`. Events from other processes are not
    affected.
-2. `eval` sets `index` to `os` and `sourcetype` to `macos:unified_log` on every
+2. `drop` removes a `backupd` event whose text is
+   `com.apple.backupd.sandbox.xpc: connection invalid`. The sibling
+   `com.apple.backupd.xpc` message and that text from other processes are not
+   affected.
+3. `eval` sets `index` to `os` and `sourcetype` to `macos:unified_log` on every
    remaining event.
 
 The route sends events whose `datatype` is `macos-unified-log` to this

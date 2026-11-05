@@ -1,0 +1,23 @@
+[
+  {
+    "_time": 1761657602.501,
+    "_raw": "com.apple.backupd.sandbox.xpc: connection invalid",
+    "process": "backupd",
+    "subsystem": "com.apple.TimeMachine",
+    "category": "General"
+  },
+  {
+    "_time": 1761657602.877,
+    "_raw": "com.apple.backupd.xpc: connection invalid",
+    "process": "backupd",
+    "subsystem": "com.apple.TimeMachine",
+    "category": "General"
+  },
+  {
+    "_time": 1761657603.214,
+    "_raw": "com.apple.backupd.sandbox.xpc: connection invalid",
+    "process": "example-agent",
+    "subsystem": "com.apple.TimeMachine",
+    "category": "General"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "index": "os",
+    "sourcetype": "macos:unified_log",
+    "process": "backupd",
+    "_raw": "com.apple.backupd.xpc: connection invalid"
+  },
+  {
+    "index": "os",
+    "sourcetype": "macos:unified_log",
+    "process": "example-agent",
+    "_raw": "com.apple.backupd.sandbox.xpc: connection invalid"
+  }
+]
