@@ -1,5 +1,10 @@
 [
   {
+    "__dropped": true,
+    "process": "backupd",
+    "_raw": "com.apple.backupd.sandbox.xpc: connection invalid"
+  },
+  {
     "index": "os",
     "sourcetype": "macos:unified_log",
     "process": "backupd",
