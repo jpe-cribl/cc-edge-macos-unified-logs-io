@@ -18,7 +18,7 @@ functions:
   # sibling com.apple.backupd.xpc message and that text from any other
   # process pass through.
   - id: drop
-    filter: "process === 'backupd' && _raw.includes('com.apple.backupd.sandbox.xpc: connection invalid')"
+    filter: "process === 'backupd' && /com[.]apple[.]backupd[.]sandbox[.]xpc: connection invalid/.test(_raw)"
     disabled: false
   - id: eval
     filter: "true"
