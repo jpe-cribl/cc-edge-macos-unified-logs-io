@@ -4,6 +4,6 @@ pre-commit:
   parallel: true
   commands:
     biome:
-      glob: '*.{js,jsx,ts,tsx,json,jsonc,yaml,yml,md}'
+      glob: "*.{js,jsx,ts,tsx,json,jsonc,yaml,yml,md}"
       run: biome check --no-errors-on-unmatched --write {staged_files}
       stage_fixed: true
